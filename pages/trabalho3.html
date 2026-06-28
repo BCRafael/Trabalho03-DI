@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 3 - APIs e JS Assíncrono</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script type="module" src="../script/components.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <my-header>
+        <span slot="title">Design de Interação</span>
+    </my-header>
+
+    <my-nav>
+        <span slot="brand">Disciplina Web</span>
+        <a slot="items" class="nav-link" href="../index.html">Apresentação</a>
+        <a slot="items" class="nav-link" href="editor.html">Editor de Cartões</a>
+        <a slot="items" class="nav-link" href="prova.html">Prova de Programação</a>
+        <a slot="items" class="nav-link active" aria-current="page" href="trabalho3.html">Trabalho 3</a>
+    </my-nav>
+
+    <main class="container my-5 flex-grow-1">
+        <h1 class="mb-4">Trabalho 3: APIs e JavaScript Assíncrono</h1>
+
+        <p class="lead">
+            Este trabalho mostra a interação com APIs usando <strong>fetch</strong>, <strong>Promise.all</strong>
+            e tratamento de erros com <strong>try/catch</strong>.
+        </p>
+
+        <section class="mb-4">
+            <h2>O que foi implementado</h2>
+            <ul>
+                <li>Carregamento dos dados da prova a partir de um arquivo JSON local.</li>
+                <li>Uso da API de tradução <strong>MyMemory</strong> em um formulário.</li>
+                <li>Consulta simultânea a 3 APIs diferentes com <strong>Promise.all</strong>.</li>
+                <li>Tratamento de erros em todas as requisições.</li>
+                <li>Componentes reutilizáveis de cabeçalho, navegação e rodapé.</li>
+            </ul>
+        </section>
+
+        <section class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h3>Formulário de Tradução</h3>
+                        <p>
+                            Envie um texto para a API de tradução e veja a resposta
+                            retornada em tempo real.
+                        </p>
+                        <a class="btn btn-primary" href="trabalho3-form.html">Abrir formulário</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h3>Resultado de 3 APIs</h3>
+                        <p>
+                            Acesse simultaneamente 3 serviços diferentes usando <strong>Promise.all</strong>
+                            e mostre o conteúdo na página.
+                        </p>
+                        <a class="btn btn-primary" href="trabalho3-multi.html">Ver APIs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>APIs utilizadas</h2>
+            <ul>
+                <li><a href="https://ghibliapi.vercel.app/films" target="_blank" rel="noopener">Ghibli API</a></li>
+                <li><a href="https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=1" target="_blank" rel="noopener">IBGE Notícias</a></li>
+                <li><a href="https://api.spaceflightnewsapi.net/v4/articles/?format=json&limit=1" target="_blank" rel="noopener">Spaceflight News</a></li>
+                <li><a href="https://api.mymemory.translated.net/get?q=Hello%20World!&langpair=en|it" target="_blank" rel="noopener">MyMemory Translation</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <my-footer>
+        <span slot="credits">Trabalho 3 de JavaScript – APIs e JS assíncrono</span>
+    </my-footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

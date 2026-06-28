@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Trabalhos de Interface Web - Apresentação
+    </title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <script type="module" src="script/components.js"></script>
+    <script type="module" src="script/tech-card.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <my-header>
+        <span slot="title">
+            Design de Interação
+        </span>
+    </my-header>
+
+    <!-- Navegação -->
+    <my-nav>
+
+        <span slot="brand">
+            Disciplina Web
+        </span>
+
+        <a
+            slot="items"
+            class="nav-link active"
+            aria-current="page"
+            href="index.html"
+        >
+            Apresentação
+        </a>
+
+        <a
+            slot="items"
+            class="nav-link"
+            href="pages/editor.html"
+        >
+            Editor de Cartões
+        </a>
+
+        <a
+            slot="items"
+            class="nav-link"
+            href="pages/prova.html"
+        >
+            Prova de Programação
+        </a>
+
+        <a
+            slot="items"
+            class="nav-link"
+            href="pages/trabalho3.html"
+        >
+            Trabalho 3
+        </a>
+
+    </my-nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5 flex-grow-1">
+
+        <!-- H1 para acessibilidade e validação -->
+        <h1 class="visually-hidden">
+            Design de Interação
+        </h1>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-lg-8">
+
+                <article>
+
+                    <h2 class="mb-4">
+                        Bem-vindo ao Site de Trabalhos
+                    </h2>
+
+                    <p class="lead">
+                        Este portal é dedicado aos trabalhos da disciplina
+                        de Interface Web, proporcionando um espaço
+                        centralizado para apresentação de projetos
+                        desenvolvidos ao longo do semestre.
+                    </p>
+
+                    <h3>
+                        Sobre este Portal
+                    </h3>
+
+                    <p>
+                        Ao longo do semestre, os demais trabalhos da
+                        disciplina serão adicionados a este site.
+                        Cada projeto representa um avanço no aprendizado
+                        de tecnologias web, desde conceitos fundamentais
+                        até práticas avançadas de design e desenvolvimento.
+                    </p>
+
+                    <p>
+                        Navegue pelas diferentes seções através do menu acima.
+                        Cada trabalho foi desenvolvido seguindo boas práticas
+                        de código, acessibilidade e responsividade,
+                        garantindo funcionamento adequado em diferentes
+                        dispositivos e navegadores.
+                    </p>
+
+                    <h3 class="mt-4">
+                        Objetivos da Disciplina
+                    </h3>
+
+                    <ul>
+                        <li>
+                            Dominar as tecnologias fundamentais da web:
+                            HTML, CSS e JavaScript
+                        </li>
+
+                        <li>
+                            Desenvolver interfaces interativas e responsivas
+                        </li>
+
+                        <li>
+                            Aplicar princípios de usabilidade e acessibilidade
+                        </li>
+
+                        <li>
+                            Utilizar frameworks e ferramentas modernas
+                            de desenvolvimento
+                        </li>
+
+                        <li>
+                            Criar projetos que validam nos padrões W3C
+                        </li>
+                    </ul>
+
+                    <h3 class="mt-4">
+                        Trabalhos Inclusos
+                    </h3>
+
+                    <dl>
+
+                        <dt>
+                            <strong>
+                                Editor de Cartões Online (Trabalho 1)
+                            </strong>
+                        </dt>
+
+                        <dd>
+                            Ferramenta interativa para criar e personalizar
+                            cartões (aniversário, Natal, Páscoa, etc.)
+                            com suporte a edição de cores, tamanhos,
+                            imagens e texto em tempo real.
+                        </dd>
+
+                        <dt class="mt-2">
+                            <strong>
+                                Prova de Programação (Trabalho 2)
+                            </strong>
+                        </dt>
+
+                        <dd>
+                            Quiz interativo com perguntas de programação
+                            em tom humorístico.
+                            Implementado como Web Component com Shadow DOM,
+                            demonstrando templates e slots.
+                        </dd>
+
+                        <dt class="mt-2">
+                            <strong>
+                                Trabalho 3
+                            </strong>
+                        </dt>
+
+                        <dd>
+                            Formulário de tradução com API MyMemory: o usuário informa um texto em português e escolhe o idioma de destino. O sistema faz fetch da API e exibe a tradução resultante.
+                        </dd>
+
+                    </dl>
+
+                    <h3 class="mt-4">
+                        Recursos Utilizados
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            HTML5 semântico e validado
+                        </li>
+
+                        <li>
+                            CSS moderno e responsivo
+                        </li>
+
+                        <li>
+                            Bootstrap 5 para componentes e layout
+                        </li>
+
+                        <li>
+                            JavaScript vanilla para interatividade
+                        </li>
+
+                        <li>
+                            Validação W3C em todas as páginas
+                        </li>
+
+                    </ul>
+
+                    <h3 class="mt-4">
+                        Tecnologias Principais
+                    </h3>
+
+                    <div class="row g-4 justify-content-center mt-3">
+
+                        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+                            <tech-card>
+
+                                <img
+                                    src="img/html5.svg"
+                                    alt="Logo HTML5"
+                                    class="tech-logo"
+                                    loading="lazy"
+                                    slot="icon"
+                                >
+
+                                <span slot="title">
+                                    HTML5
+                                </span>
+
+                                <span slot="main">
+                                    Estrutura semântica e acessível
+                                </span>
+
+                                <span slot="details">
+                                    Utiliza elementos semânticos e
+                                    acessibilidade para melhor
+                                    estruturação de conteúdo
+                                </span>
+
+                            </tech-card>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+                            <tech-card>
+
+                                <img
+                                    src="img/css3.svg"
+                                    alt="Logo CSS3"
+                                    class="tech-logo"
+                                    loading="lazy"
+                                    slot="icon"
+                                >
+
+                                <span slot="title">
+                                    CSS3
+                                </span>
+
+                                <span slot="main">
+                                    Estilos modernos e responsivos
+                                </span>
+
+                                <span slot="details">
+                                    Design responsivo com media queries
+                                    e flexbox para todos os dispositivos
+                                </span>
+
+                            </tech-card>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+                            <tech-card>
+
+                                <img
+                                    src="img/javascript.svg"
+                                    alt="Logo JavaScript"
+                                    class="tech-logo"
+                                    loading="lazy"
+                                    slot="icon"
+                                >
+
+                                <span slot="title">
+                                    JavaScript
+                                </span>
+
+                                <span slot="main">
+                                    Interatividade e dinamismo
+                                </span>
+
+                                <span slot="details">
+                                    Web Components, templates e slots
+                                    para componentes reutilizáveis
+                                </span>
+
+                            </tech-card>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <my-footer>
+
+        <span slot="credits">
+            Desenvolvido como parte da disciplina
+            de Interface Web - Trabalhos 1 e 2
+        </span>
+
+    </my-footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+{
+  "titulo": "Prova Meme de Programação",
+  "perguntas": [
+    {
+      "nome": "Qual o primeiro passo quando o computador não liga?",
+      "questoes": [
+        "Dar um tapa no gabinete",
+        "Verificar se está na tomada",
+        "Chorar imediatamente",
+        "Postar no TikTok pedindo ajuda"
+      ],
+      "correta": "Verificar se está na tomada"
+    },
+    {
+      "nome": "O que acontece quando você fecha o VS Code sem salvar?",
+      "questoes": [
+        "Nada acontece",
+        "O código vai para o céu dos programadores",
+        "O computador explode",
+        "O professor aparece atrás de você"
+      ],
+      "correta": "O código vai para o céu dos programadores"
+    },
+    {
+      "nome": "Qual é a função do CTRL + C?",
+      "questoes": [
+        "Cancelar a existência",
+        "Copiar algo",
+        "Dar critical hit no teclado",
+        "Fechar o Windows"
+      ],
+      "correta": "Copiar algo"
+    },
+    {
+      "nome": "Quando o código funciona de primeira, isso significa:",
+      "questoes": [
+        "Você virou um hacker lendário",
+        "Tem algo errado",
+        "O universo bugou",
+        "O professor esqueceu um requisito"
+      ],
+      "correta": "O universo bugou"
+    }
+  ]
+}
